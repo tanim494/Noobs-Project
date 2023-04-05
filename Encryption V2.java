@@ -1,3 +1,9 @@
+/*
+This a program for simple encryption and decryption.
+@author Ahsanul Karim Tanim
+FB - fb.com/tanim494
+*/
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class encrypt {
@@ -37,6 +43,12 @@ public class encrypt {
             }
         }
     }
+    
+ /**
+ * Encrypt a string
+ * @param inp the string to encrypt
+ * @return the encrypted string
+ */ 
     public static String encrypt(String inp) {
         inp = new StringBuilder(inp).reverse().toString();
         //System.out.println(inp);
@@ -75,6 +87,12 @@ public class encrypt {
         }
         return enc;
     }
+    
+    /**
+ * Decrypt a string
+ * @param inp the string to decrypt
+ * @return the decrypted string
+ */
     public static String decrypt (String inp) {
         inp = inp.replaceAll("Qwe6","a");
         inp = inp.replaceAll("Oae9","b");
