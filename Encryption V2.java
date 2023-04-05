@@ -27,9 +27,9 @@ public class encrypt {
             } else if (option == 2) {
                 System.out.println("Enter The text you want to decrypt: ");
                 String text = sc.nextLine();
-                String decryptedText = decrypt(text);
+                //String decryptedText = decrypt(text);
                 System.out.println("Here's the Decrypted text: ");
-                System.out.println(decryptedText);
+                System.out.println(decrypt(text));
             } else if (option == 3) {
                 break;
             } else {
