@@ -39,7 +39,7 @@ public class encrypt {
     }
     public static String encrypt(String inp) {
         inp = new StringBuilder(inp).reverse().toString();
-        System.out.println(inp);
+        //System.out.println(inp);
         String enc = "";
         for (int i = 0; i < inp.length(); i++) {
             char c = inp.charAt(i);
